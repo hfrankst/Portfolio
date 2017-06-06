@@ -8,7 +8,6 @@
 		<nav>
 			<ul>
 			<a href="index.html">Home</a>
-			<!-- <a href="#">About</a> -->
 			<a href="contact.html">Contact</a>
 			</ul>
 		</nav>
@@ -16,8 +15,17 @@
 
 
 	<div>
-		<form>
-			<!-- make an email submission form  -->
+		<form id="email-form"> <!--may need some kind of action="" in this tag to process the input -->
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your first name...">
+
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+			<label for="subject">Subject:</label>
+			<textarea id="subject" name="subject" placeholder="Leave me a message!" style="height:200px"></textarea>
+
+			<input type="submit" value="Submit">
 		</form>
 	</div>
 
