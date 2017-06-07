@@ -1,7 +1,7 @@
-* {
+/** {
 	border: 1px solid black;
 }
-
+*/
 
 
 /********************************************************
@@ -10,8 +10,8 @@
 
 img {
 	max-width: 350px;
-	max-height: 350px;
-	border-radius: 175px;
+	max-height: 280px;
+	border-radius: 200px;
 }
 
 
@@ -61,4 +61,22 @@ img {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+
+/*********************************************
+*********CONTACT FORM****************
+*********************************************/
+
+body {
+    background: url('/assets/example/bg_6.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color:#333;
+}
+
+h1 .btn {
+    font-size:30px;
 }
