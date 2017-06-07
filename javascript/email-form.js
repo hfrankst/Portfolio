@@ -1,8 +1,6 @@
 "use strict";
 
-var wrapper = document.getElementById('email-form');
-console.log("the wrapper", wrapper);
-
+// code for the bootstrap contact modal 
 
 /* form validation plugin */
 $.fn.goValidate = function() {
@@ -94,4 +92,6 @@ $.fn.goValidate = function() {
     return this;
 };
 $('form').goValidate();
+
+// end of modal code 
 
