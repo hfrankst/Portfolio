@@ -2,65 +2,203 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<!-- links for the technology logos -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 	<title>Harper Frankstone | Software Developer</title>
 </head>
 <body>
 	<header>
-		<nav>
-			<ul>
-			<a href="index.html">Home</a>
-			<!-- <a href="#">About</a> -->
-			<a href="contact.html">Contact</a>
-			</ul>
+		<nav class="col-sm-4">
+			<div class="container">
+				<div class="row" id="photodiv">
+					<div class="col-sm-4" id="headshot">
+						<img  id="image" src="/images/nss-personal-pro.jpg">
+					</div>
+					<div class="col-sm-4" id="header_title">
+						<h1>Harper Frankstone</h1><h2>Software Developer</h2>
+					</div>
+				
+				</div>
+			</div>
+
+			<div class="container">
+				  <div class="row">
+				    
+				    <h3 class="text-center"><a href="#myModal" role="button" class="btn btn-primary btn-sm" data-toggle="modal">Contact Me!</a></h3>
+				    
+				  </div>
+			</div>
+			
+			<!-- beginning of modal -->
+
+			<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			        <h3 id="myModalLabel">I'd Love to Hear From You</h3>
+			      </div>
+			      <div class="modal-body">
+
+			      <!-- start of contact form -->
+			       <form id="contact-form" method="post" action="contact.php" role="form">
+
+			           <div class="messages"></div>
+
+			           <div class="controls">
+
+			               <div class="row">
+			                   <div class="col-md-6">
+			                       <div class="form-group">
+			                           <label for="form_name">Firstname *</label>
+			                           <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+			                           <div class="help-block with-errors"></div>
+			                       </div>
+			                   </div>
+			                   <div class="col-md-6">
+			                       <div class="form-group">
+			                           <label for="form_lastname">Lastname *</label>
+			                           <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+			                           <div class="help-block with-errors"></div>
+			                       </div>
+			                   </div>
+			               </div>
+			               <div class="row">
+			                   <div class="col-md-6">
+			                       <div class="form-group">
+			                           <label for="form_email">Email *</label>
+			                           <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+			                           <div class="help-block with-errors"></div>
+			                       </div>
+			                   </div>
+			                   <div class="col-md-6">
+			                       <div class="form-group">
+			                           <label for="form_phone">Phone</label>
+			                           <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+			                           <div class="help-block with-errors"></div>
+			                       </div>
+			                   </div>
+			               </div>
+			               <div class="row">
+			                   <div class="col-md-12">
+			                       <div class="form-group">
+			                           <label for="form_message">Message *</label>
+			                           <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+			                           <div class="help-block with-errors"></div>
+			                       </div>
+			                   </div>
+			                   <div class="col-md-12">
+			                       <input type="submit" class="btn btn-success btn-send" value="Send message">
+			                   </div>
+			               </div>
+			               <div class="row">
+			                   <div class="col-md-12">
+			                       <p class="text-muted"><strong>*</strong> These fields are required.</p>
+			                   </div>
+			               </div>
+			           </div>
+			       </form>
+			       <!-- end of contact form -->
+
+			      </div>
+			      <div class="modal-footer">
+			        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- end of modal -->
 		</nav>
+
 	</header>
-
-<!-- make up your mind more on the look of this site, do more research and check out other people's site. -->
-
-	<div class="headshot">
-		<img src="/images/nss-personal-pro.jpg">
-	</div>
-
-	<div class="sidebar">
-		
-	</div>
+	<hr>
+	
 
 
-	<div class="main">
-		<div class="bio">
-			<h3>About Me</h3>
+	<div class="container">
+	<div class="main col-sm-12">
+		<div class="row bio">
+			<h3 id="about">About Me</h3>
 			<hr>
 			<p>
-				I am a software developer who enjoys taking an idea from concept to fruition. A strong analytical thinker, I have long valued challenges and hard work. I am drawn to logic and have found my critical thinking skills to be an effective tool for creative and practical endeavors alike. <br>
+				I am a software developer who enjoys taking an idea from concept to fruition. A strong analytical thinker, I have long valued challenges and hard work. I am drawn to logic and have found my critical thinking skills to be an effective tool for creative and practical endeavors alike. <br><br>
 
-				I greatly enjoy solving problems that have positive and practical impacts on members of my community. I did this as a teenager as a Boy Scout, culminating in my receiving the Eagle Scout award. Altruistic values instilled in me during that time greatly influenced me, and I see software development and the growing technology industry as providing the tools to help improve quality of life for people the world round. I also learned how to effectively work with a team, and I enjoy that I have been able to use that skill within the agile development environment. I prefer collaborative work, especially with regards to programming. I was blessed with great opportunities to travel to many different countries while in college, through a study abroad program, Semester at Sea. That experience showed me the beauty and value of different perspectives, further deepening my belief that collaborative efforts are the most effective way to approach problems. <br>
+				I greatly enjoy solving problems that have positive and practical impacts on members of my community. I did this as a teenager as a Boy Scout, culminating in my receiving the Eagle Scout award. Altruistic values instilled in me during that time greatly influenced me, and I see software development and the growing technology industry as providing the tools to help improve quality of life for people the world round. I also learned how to effectively work with a team, and I enjoy that I have been able to use that skill within the agile development environment. I prefer collaborative work, especially with regards to programming. I was blessed with great opportunities to travel to many different countries while in college, through a study abroad program, Semester at Sea. That experience showed me the beauty and value of different perspectives, further deepening my belief that collaborative efforts are the most effective way to approach problems. <br><br>
 
-				Through my experience working in sales for a small food start up, I developed customer and personal management skills that I look forward to applying to my career in software development. My experience working with a development team to build the website for this start up was my first real introduction to software development. I have the perspective of a product owner, and it has been incredible interesting to approach the same work from the perspective of a development team member. <br>
+				Through my experience working in sales for a small food start up, I developed customer and personal management skills that I look forward to applying to my career in software development. My experience working with a development team to build the website for this start up was my first real introduction to software development. I have the perspective of a product owner, and it has been incredibly interesting to approach the same work from the perspective of a development team member. <br><br>
 
 				I am excited to join and contribute to a development team!<br>
 			</p>
+
+			<p class="col-sm-12 col-sm-offset-4" id="about_contact">
+				<h4>Ways to Find Me:</h4>
+				<ul>
+					<li><a href="https://github.com/hfrankst">GitHub</a></li>
+					<li><a href="https://www.linkedin.com/in/harper-frankstone-837849a3/">LinkedIn</a></li>
+				</ul>
+			</p>
+
+		</div>
+	
+		<div class="row technology">
+			<!-- put technologies and resources here -->
+			<h3>Technologies</h3>
+			<hr>
+			<div class="text-center">
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-trello-plain-wordmark colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-angularjs-plain colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-bootstrap-plain colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-django-plain colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-git-plain-wordmark colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-github-plain-wordmark colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-grunt-line-wordmark colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-html5-plain colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-javascript-plain colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-jquery-plain-wordmark colored"></i>
+			<i style="font-size: 50px; padding-right: 7px;" class="devicon-python-plain colored"></i>
+			</div>
 		</div>
 
-		<div class="projects">
+		<div class="row projects">
 			<h3>Projects</h3>
 			<hr>
-			<h5>Stock Up!</h5>
+			<h5><strong>Stock Up!</strong></h5>
 			<p>
-				<strong><a href="https://github.com/hfrankst/NSS-frontend-capstone">'Stock Up'</a></strong> is a single page application, with basic CRUD functionality, using AngularJS and an interactive map through LeafletJS to show users grocery store deals and promotions.  The app makes API calls to Firebase to pull in dummy data promotions, and display the store offering the deals on a map.
+				<strong><a href="https://github.com/hfrankst/NSS-frontend-capstone">'Stock Up'</a></strong> is a single page application, with basic CRUD functionality, using AngularJS and an interactive map through LeafletJS to show users grocery store deals and promotions.  The app makes API calls to Firebase to pull in dummy data promotions, and display the store offering the deals on a map.  The link provided will take you to the first version of the project.  Version 2.0 to be released soon!
 			</p>
-		</div>
-		
+		</div>	
+	</div>
 	</div>
 
+
+	
 
 
 	<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 	
-	<script type="text/javascript" src="/javascript/main.js"></script>
+	<script type="text/javascript" src="/lib/node_modules/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="/lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<footer>
+	<script type="text/javascript" src="/javascript/validator.js"></script>
+	<script type="text/javascript" src="/javascript/contact.js"></script>
+	<script type="text/javascript" src="/javascript/main.js"></script>
+	<footer class="text-center">
 		<span>2017&copy; Harper Frankstone</span>
 	</footer>
 </body>

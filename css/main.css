@@ -1,7 +1,26 @@
 * {
-	border: 1px solid black;
+    /*border: 1px solid black;*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
+body {
+        background: linear-gradient(to top left, #236B8E, white)
+
+}
+
+/********************************************************
+*****************NAV STYLING***********************
+********************************************************/
+    
+
+nav div#container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
 
 
 /********************************************************
@@ -9,11 +28,56 @@
 ********************************************************/
 
 img {
-	max-width: 350px;
-	max-height: 350px;
-	border-radius: 175px;
+        max-width: 230px;
+        max-height: 230px;
 }
 
+div#headshot {
+    display: inline;
+    position: relative;
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+div#headshot img {
+    width: auto;
+    height: 100%;
+    margin-left: 30px;
+}
+
+div#header_title {
+    display: inline;
+    width: 350px;
+    float: right;
+    margin-top: 10vh;
+    margin-right: 45vw;
+}
+
+/*******************************************************
+************MAIN CONTENT STYLING*************
+********************************************************/
+
+div#main {
+    display: flex;
+    flex-direction: column;
+}
+
+div#bio {
+    display: inline;
+    max-width: 20vw;
+    align-items: center;
+}
+
+h3.about {
+    align-items: center !important;
+    padding-left: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
 
 
 /*******************************************************
@@ -61,4 +125,12 @@ img {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+
+/*******************************************************
+************STICKY FOOTER STYLING************
+********************************************************/
+footer span {
+    line-height: 2em;
 }
