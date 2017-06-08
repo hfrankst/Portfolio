@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
@@ -15,7 +15,7 @@ nav {
 }
 
 
-div#container {
+nav div#container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -24,9 +24,7 @@ div#container {
 }
 
 div#header_title {
-    /*margin-right: 40vw;*/
-    /*margin-top: 25vh;*/
-    /*float: right;*/
+    display: inline;
     width: 350px;
     align-content: center;
     flex-grow: 3;
