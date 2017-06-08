@@ -189,7 +189,7 @@
         data[$el.attr('name')] = getValue($el);
         $.get($el.data('remote'), data)
           .fail(function (jqXHR, textStatus, error) { errors.push(getErrorMessage('remote') || error); })
-          .always(function () { deferred.resolve(errors)};);
+          .always(function () { deferred.resolve(errors)})
       });
     } else deferred.resolve(errors);
 

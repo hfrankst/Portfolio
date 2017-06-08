@@ -4,16 +4,15 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+body {
+        background: linear-gradient(to top left, #236B8E, white)
 
+}
 
 /********************************************************
 *****************NAV STYLING***********************
 ********************************************************/
-
-nav {
-    display: flex;
-}
-
+    
 
 nav div#container {
     display: flex;
@@ -23,64 +22,42 @@ nav div#container {
     flex-direction: row;
 }
 
-div#header_title {
-    display: inline;
-    width: 350px;
-    align-content: center;
-    flex-grow: 3;
-    order: 2;
-}
-
-div#clearfix {
-    clear: both;
-}
-
 
 /********************************************************
 **************IMAGE STYLING***********************
 ********************************************************/
 
-/*img {
-        max-width: 350px;
-        max-height: 280px;
-        border-radius: 50%;
+img {
+        max-width: 230px;
+        max-height: 230px;
 }
-*/
-/*img#image{ 
-        order: 1;
-        margin: auto;
-        border: 2px solid grey;
-}
-*/
 
 div#headshot {
-    display: block;
+    display: inline;
     position: relative;
     width: 230px;
     height: 230px;
     overflow: hidden;
     border-radius: 50%;
-/*    margin-left: auto;
-    margin-right: auto;
-*/    align-content: space-around;
-    align-items: center;
-    order: 1;
-    flex-grow: 1;
 }
 
 div#headshot img {
     width: auto;
     height: 100%;
     margin-left: 30px;
-    /*float: left;*/
 }
 
-
+div#header_title {
+    display: inline;
+    width: 350px;
+    float: right;
+    margin-top: 10vh;
+    margin-right: 45vw;
+}
 
 /*******************************************************
 ************MAIN CONTENT STYLING*************
 ********************************************************/
-/*style the content so that it is centered in the screen with a good amount of space in between the content and page boundaries*/
 
 div#main {
     display: flex;
@@ -90,14 +67,17 @@ div#main {
 div#bio {
     display: inline;
     max-width: 20vw;
+    align-items: center;
 }
 
-div#bio h3 {
-    text-align: center;
+h3.about {
+    align-items: center !important;
     padding-left: 50%;
 }
 
-
+ul {
+    list-style-type: none;
+}
 
 
 /*******************************************************
@@ -148,20 +128,9 @@ div#bio h3 {
 }
 
 
-/*********************************************
-*********CONTACT FORM****************
-*********************************************/
-
-body {
-    background: no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color:#333;
-}
-
-h1 .btn {
-    font-size: 20px;
-    
+/*******************************************************
+************STICKY FOOTER STYLING************
+********************************************************/
+footer span {
+    line-height: 2em;
 }
